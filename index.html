@@ -1,44 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iRepairLab</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Reseñas</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
             </ul>
         </nav>
-        <h1>Bienvenido a iRepairLab</h1>
     </header>
 
 
     <main>
-        <section>
+        <section id="inicio" class="hero">
+            <div class="container">
+            <h1>Bienvenido a iRepairLab</h1>
+            <p>Tu solución confiable para la reparación de dispositivos electrónicos.</p>
+            <button>Contáctanos</button>
+            </div>
+        </section>
+        <section id="servicios">
+            <div class="container">
             <h2>Nuestros Servicios</h2>
             <p>Descripción de los servicios ofrecidos por iRepairLab.</p>
+            <!-- Aqui se va a colocar un carrucel con fotografias de repaciones junto con una lista de los servicios-->
+            </div>
         </section>
-        <section>
+        <section id="contacto">
+            <div class="container">
             <h2>Contacto</h2>
-            <button>Link para ligar con WhatApp</button>
+            <a href="https://wa.me/5624641927" target="_blank">Link para mensajear por WhatsApp</a>
+            <!-- Aqui se va a colocar un link ligado a una APi de WhatsApp -->
+            </div>
         </section>
-        <section>
+        <section id="reseñas">
+            <div class="container">
             <h2>Reseñas</h2>
             <p>Opiniones de nuestros clientes sobre los servicios de iRepairLab.</p>
+            <!-- Aqui se va a colocar un link a las reseñas de google maps. -->
+            </div>
         </section>
 
     </main>
 
-    
+
     <footer>
+        <div class="container">
+        <h2>Contacto</h2>
+        <ul>
+            <li><a href="#">Telefono de contacto</a></li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Redes Sociales</a></li>
+        </ul>
         <p>&copy; 2025 iRepairLab. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
