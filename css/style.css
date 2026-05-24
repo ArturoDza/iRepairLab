@@ -22,3 +22,14 @@ body{
     text-align: center;
     font-size: 18px;
 }
+
+#logoNav{
+    width: 100px;
+    height: auto;
+}
+
+#logoInicio{
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
