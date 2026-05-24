@@ -2,6 +2,11 @@ body{
     background-color: #0b2e74;
 }
 
+a{
+    text-decoration: none;
+    color: #333;
+}
+
 .navbar {
     background-color: #e2e5eb;
     display: flex;
@@ -32,4 +37,9 @@ body{
     width: 600px;
     height: auto;
     margin-top: 20px;
+}
+
+.hero{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
 }
