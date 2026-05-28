@@ -5,6 +5,7 @@ body{
 a{
     text-decoration: none;
     color: #333;
+    font-family: sans-serif;
 }
 
 .navbar {
@@ -12,24 +13,19 @@ a{
     display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 10px 0;
+        padding: 10px 10px;
     
 }
 
 .nav-item {
     font-size: 18px;
     text-align: center;
-    margin: 40px;
+    margin: 1px;
 }
 
-.container{
-
-    text-align: center;
-    font-size: 18px;
-}
 
 #logoNav{
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
@@ -37,6 +33,19 @@ a{
     width: 600px;
     height: auto;
     margin-top: 20px;
+}
+
+#inicioTitulo{
+    color: #fff;
+    font-family: sans-serif;
+    margin:200px 50px;
+    text-align: center;
+}
+
+.container{
+
+    text-align: center;
+    font-size: 18px;
 }
 
 .hero{
