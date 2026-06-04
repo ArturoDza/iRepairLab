@@ -36,7 +36,6 @@ header{
     align-items: center;
     padding: 5px 5px;
     border-radius: 30px 30px 30px 30px;
-    text-shadow: 0 0 5px var(--azulcian);
 
 }
 
@@ -114,6 +113,7 @@ header{
     margin: 20px;
     color: var(--textos);
 }
+
 #cardsServicios{
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
@@ -135,6 +135,8 @@ header{
     transition: transform 0.3s ease;
 }
 
+
+
 footer{
     background-color: var(--azulFondo);
     color: var(--textos);
@@ -144,3 +146,10 @@ footer{
     border-radius: 20px 20px 20px 20px;
 }
 
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 30px 30px 30px 30px;
+}
