@@ -13,15 +13,26 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navLogo"><img id="logoNav" src="/assets/iRepairFavicon.png" alt="Logo iRepairLab"></div>
-            <div class="nav-item"><a href="#inicio">Inicio</a></div>
-            <div class="nav-item"><a href="#servicios">Servicios</a></div>
-            <div class="nav-item"><a href="#reseñas">Reseñas</a></div>
-            <div class="nav-item" id="contactoNav"><a href="https://wa.me/5624641927" target="_blank"><lord-icon
-                        src="https://cdn.lordicon.com/axewyqun.json" trigger="loop-on-hover" delay="0"
-                        state="morph-alone" colors="primary:#00B4D8,secondary:#00B4D8" style="width:50px;height:50px">
-                    </lord-icon></a></div>
+            <div class="navLogo">
+                <img id="logoNav" src="/assets/iRepairFavicon.png" alt="Logo iRepairLab">
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#reseñas">Reseñas</a>
+                <a href="https://wa.me/5624641927" target="_blank" class="btn-contacto"> <lord-icon
+                        src="https://cdn.lordicon.com/axewyqun.json" trigger="loop-on-hover"
+                        colors="primary:#0A192F,secondary:#0A192F" style="width:28px;height:28px"> </lord-icon>
+                </a>
+            </div>
+
         </nav>
+
     </header>
 
 
@@ -100,7 +111,7 @@
         <a href="https://lordicon.com/">Icons by Lordicon.com</a>
     </footer>
 
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>
