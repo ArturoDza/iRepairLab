@@ -93,16 +93,21 @@ header {
 }
 
 #logoInicio {
-    width: 600px;
+    width: 100%;
+    max-width: 550px;
     height: auto;
-    margin-top: 20px;
+
+    justify-self: center;
 }
 
 #inicioTitulo {
     color: var(--textos);
     font-family: sans-serif;
-    margin: 200px 50px;
-    text-align: center;
+
+    margin: 0;
+
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.2;
 }
 
 .container {
@@ -112,25 +117,49 @@ header {
 }
 
 .hero {
-    grid-template-columns: 1fr 1fr;
     display: grid;
-    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+
+    min-height: 100vh;
+
+    padding: 60px 20px 40px;
 }
 
 .eleccion {
-    display: flex
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
 }
 
-#eleccion {
-    margin-left: 200px;
+.item-eleccion {
+    background-color: var(--azulFondo);
+
+    padding: 20px;
+    border-radius: 20px;
+
+    min-width: 220px;
+    max-width: 280px;
+
+    text-align: center;
+}
+
+.item-eleccion h4 {
+    margin: 0;
+    color: var(--textos);
 }
 
 .preferencia {
     color: var(--textos);
 }
 
-#garantia {
+#garantia{
     color: var(--textos);
+    padding: 0 40px;
 }
 
 #reseñas {
@@ -150,7 +179,8 @@ header {
 
 #cardsServicios {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
     color: var(--textos);
 }
 
@@ -160,13 +190,21 @@ header {
 }
 
 .cardServicio {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 30px 30px 30px 30px;
+    padding: 15px;
+    border-radius: 30px;
     background-color: var(--azulFondo);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     transition: transform 0.3s ease;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.imgServicio {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 
@@ -191,6 +229,7 @@ footer {
 /* ===== RESPONSIVE NAVBAR ===== */
 
 @media (max-width: 768px) {
+    /* navbar */
 
     .menu-toggle {
         display: block;
@@ -226,4 +265,48 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    /* hero */
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 80px 10px 20px;
+    }
+
+    #logoInicio {
+        max-width: 280px;
+    }
+
+    #inicioTitulo {
+        font-size: 2rem;
+    }
+
+    /* cardsServicios */
+
+    #cardsServicios {
+        grid-template-columns: 1fr;
+    }
+
+    #servicios {
+        margin: 20px;
+    }
+
+    .cardServicio {
+        padding: 16px;
+    }
+
+    /* Por qúe elegir iRepairLab */
+
+    .eleccion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-eleccion {
+        width: 100%;
+        max-width: 320px;
+    }
+
 }
